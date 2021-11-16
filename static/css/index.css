@@ -1,0 +1,154 @@
+.back-top {
+  background-color: #009688;
+  height: 15vh;
+}
+
+.back-main {
+  background-color: #d9dbd5;
+  height: 85vh;
+}
+
+.back-container {
+  position: relative;
+}
+
+.front-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.front-container1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+}
+
+.chat-top {
+  background-color: #ededed;
+  min-height: 50px;
+}
+
+.profile-image {
+  margin-top: 7px;
+  height: 30px;
+  width: 30px;
+}
+
+.contacts {
+  background-color: #ffffff;
+  min-height: 600px;
+}
+
+.contact-table-scroll {
+  overflow-y: scroll;
+  height: 600px;
+}
+
+.message-area {
+  background-color: #e4e1de;
+  min-height: 600px;
+}
+
+.message-table-scroll {
+  overflow-y: scroll;
+  height: 550px;
+}
+
+.message-box {
+  background-color: #f0f0f0;
+}
+
+.control {
+    text-align: right;
+}
+
+.titulo {
+    font-size: 30px;
+    color: #4c9888;
+    text-align: right;
+    font-weight: 700;
+}
+
+.titulo-app {
+    vertical-align: bottom;
+    font-weight: 700;
+}
+
+.box1 {
+  width: 300px;
+  margin: 0 15px 0 0;
+  background: #a1adac;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: relative;
+  font-size: 20px;
+}
+
+.box2 {
+  width: 300px;
+  margin: 0 10px;
+  background: #00bfb6;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: relative;
+}
+
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #a1adac;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #a1adac;
+  border-bottom: 10px solid transparent;
+  right: -19px;
+  top: 6px;
+}
+
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #00bfb6;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
+
+.sb3:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #00bfb6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  left: 19px;
+  bottom: -19px;
+}
+
+.sb4:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #00bfb6;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  right: 19px;
+  bottom: -19px;
+}

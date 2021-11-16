@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Código Morse</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.ico') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/socket.io.js') }}"></script>
+</head>
+
+<body>
+    <div class="back-container">
+        <div class="container-fluid front-container">
+            <div class="back-top"></div>
+            <div class="back-main"></div>
+        </div>
+        <div class="container front-container1">
+            <div class="row chat-top">
+                <div class="col-sm-6">
+                    <img src="{{ url_for('static', filename='images/img1.png') }}" alt="" class="profile-image ">
+                    <span class="titulo-app">ZapMorse</span>
+                </div>
+                <div class="col-sm-6  titulo">
+                    <span class="ml-2">Vamos Códificar</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 message-area">
+                    <div class="message-table-scroll" id="area-msg">
+                        <table class="table">
+                            <tbody id='chat-body'>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row message-box p-3">
+                        <span class="col-sm-12 input-group">
+                            <input type="text" class="form-control" id="message_input" placeholder="Digite sua mensagem em Códogo Morse (apenas pontos, traços e espaço para separar os códigos)" title="Digite sua mensagem em Códogo Morse (apenas pontos, traços e espaço para separar os códigos)" onkeypress="return event.charCode ==45 || event.charCode ==46 || event.charCode ==32">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success" id="chat-message-submit" onclick="enviar()">Decodificar</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/morse.js') }}"></script>
+
+</body>
+</html>
